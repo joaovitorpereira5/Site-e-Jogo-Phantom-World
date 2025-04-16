@@ -1,0 +1,188 @@
+/* jogo.css */
+
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Corpo da página */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: rgb(34, 0, 49);
+    color: white;
+}
+
+/* =================== CABEÇALHO =================== */
+
+.header {
+    background-color: rgb(64, 0, 94);
+    padding: 20px 0;
+}
+
+.header .container {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+/* AUMENTANDO o tamanho da logo do header */
+.header-logo img {
+    height: 70px;
+}
+
+/* Navegação */
+.header-nav {
+    margin-left: auto;
+}
+
+.header-nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.header-nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.header-nav ul li a:hover {
+    color: #ccc;
+}
+
+/* Botão "Jogar" */
+.header-btn {
+    background-color: #A66CFF;
+    color: white;
+    padding: 5px 15px;
+    font-weight: bold;
+    border: none;
+}
+
+/* Ícone do menu mobile */
+.header-menu {
+    display: none;
+    font-size: 24px;
+    color: white;
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+/* =================== CONTEÚDO PRINCIPAL =================== */
+
+main {
+    padding: 40px 20px;
+}
+
+.sobre .container {
+    max-width: 1000px;
+    margin: auto;
+    text-align: center;
+}
+
+.sobre h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #A66CFF;
+}
+
+/* Faixa de título com ícone */
+.faixa {
+    background-color: #A66CFF;
+    padding: 10px 20px;
+    border-radius: 8px;
+    display: inline-block;
+    color: white;
+    font-weight: bold;
+}
+
+/* Jogo embedado */
+iframe {
+    width: 100%;
+    height: 600px;
+    border: 3px solid #A66CFF;
+    margin: 30px 0;
+    border-radius: 10px;
+}
+
+/* Botão "Abrir em outra Janela" */
+.btn {
+    background-color: #A66CFF;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border: none;
+    display: inline-block;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: #843EF1;
+}
+
+/* Centralizar elementos */
+.center {
+    text-align: center;
+}
+
+/* =================== RODAPÉ =================== */
+
+.footer {
+    background-color: rgb(64, 0, 94);
+    padding: 30px 0;
+    text-align: center;
+}
+
+/* AUMENTANDO o tamanho da logo do footer */
+.footer img {
+    height: 60px;
+    margin-bottom: 10px;
+}
+
+.footer .redes a {
+    color: white;
+    font-size: 18px;
+    margin: 0 10px;
+    transition: color 0.3s;
+}
+
+.footer .redes a:hover {
+    color: #A66CFF;
+}
+
+/* =================== RESPONSIVO =================== */
+
+@media (max-width: 767px) {
+    .header-nav {
+        display: none;
+        width: 100%;
+        text-align: center;
+    }
+
+    .header-nav.active {
+        display: block;
+    }
+
+    .header-nav ul {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .header-menu {
+        display: block;
+    }
+
+    iframe {
+        height: 400px;
+    }
+}
