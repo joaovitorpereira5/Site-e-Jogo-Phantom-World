@@ -10,14 +10,14 @@
 /* Estilos gerais */
 body {
     font-family: 'Roboto', sans-serif;
-    background-color: rgb(34, 0, 49); /* Roxo escuro */
+    background-color: rgb(34, 0, 49);
     color: white;
 }
 
 /* =================== CABEÇALHO =================== */
 
 .header {
-    background-color: rgb(64, 0, 94); /* Roxo médio */
+    background-color: rgb(64, 0, 94);
     padding: 20px 0;
 }
 
